@@ -38,6 +38,7 @@
     "./src/**/*.test.ts"
   ],
   "include": [
+    "./src/client/*.js",
     "./src/**/*.tsx",
     "./src/**/*.ts",
     "./src/**/**.*.ts",

@@ -55,7 +55,7 @@ export async function createServer(container: AwilixContainer<AppContainer>) {
 
   // Adding SSR  catch-all route
   app.get("/", async (request, reply) => {
-    const { renderedHTML } = (await import("../client/server-entry.mjs")) as {
+    const { renderedHTML } = (await import("../../dist/client/server-entry.mjs")) as {
       renderedHTML: HTMLRenderer;
     };
 
